@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3d405b;
+}
+.input {
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  width: 190px;
+  height: 30px;
+  padding: 0 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #4A9DEC;
+}
+.input:hover,.input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+.ser{
+  width: 100%;
+  height: 90%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.user{
+  width: 30%;
+  height: 70px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 8px;
+  gap: 25px;
+  margin-top: 18px;
+  transition: 2s;
+  background-color: #F3F3F3;
+}
+.user:hover {
+  width: 50%;
+}
+.user p {
+  color: #3d405b;
+}
+.user h2{
+ margin-left: -20px;
+  color: #3d405b;
+}
+.user img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ button:hover span {
+  padding-right: 15px;
+ }
+ button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
